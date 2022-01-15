@@ -1,0 +1,55 @@
+{
+  "name": "yzen.dev/php-slack",
+  "version": "0.1",
+  "description": "PHP client for Slack",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "keywords": [ "slack", "client", "slack client"],
+  "authors": [
+    {
+      "name": "Andey Iatsenko",
+      "email": "yzen.dev@gmail.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "PHPSlack\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "guzzlehttp/guzzle": "7.3.*"
+  },
+  "scripts": {
+    "phpunit": [
+      "./vendor/phpunit/phpunit/phpunit --configuration ./phpunit.xml"
+    ],
+    "phpstan": [
+      "./vendor/bin/phpstan analyse -c ./phpstan.neon src"
+    ],
+    "phpcs": [
+      "./vendor/bin/phpcs --standard=./phpcs.xml -n --no-cache -s"
+    ]
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+    ,
+    "phpstan/phpstan": "^0.12.82",
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^9.3",
+    "squizlabs/php_codesniffer": "*"
+  },
+  "support": {
+    "issues": "https://github.com/yzen-dev/plain-to-class/issues",
+    "source": "https://github.com/yzen-dev/plain-to-class"
+  }
+}
