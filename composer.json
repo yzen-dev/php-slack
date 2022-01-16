@@ -49,7 +49,7 @@
     "squizlabs/php_codesniffer": "*"
   },
   "support": {
-    "issues": "https://github.com/yzen-dev/plain-to-class/issues",
-    "source": "https://github.com/yzen-dev/plain-to-class"
+    "issues": "https://github.com/yzen-dev/php-slack/issues",
+    "source": "https://github.com/yzen-dev/php-slack"
   }
 }
